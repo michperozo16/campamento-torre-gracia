@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; form-action 'self'" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#123d24" />
+  <title>Campamento | Torre de Gracia Navarra</title>
+  <style>
+    :root{--bg:#f4f8f3;--card:#ffffff;--ink:#15210f;--muted:#5f6f57;--accent:#7c2d12;--accent2:#184f2d;--accent3:#2f7d45;--line:#d7e2d6;--ok:#166534;--danger:#b91c1c}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#eef5ef,#fff8f1 42%,#fff);color:var(--ink)}
+    .wrap{max-width:760px;margin:auto;padding:18px 14px 60px}.hero{background:linear-gradient(135deg,var(--accent) 0%,var(--accent3) 45%,var(--accent2) 100%);color:white;border-radius:24px;padding:26px 22px;box-shadow:0 18px 50px rgba(23,72,40,.28);position:relative;overflow:hidden}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(0,0,0,.18),transparent 48%,rgba(255,255,255,.13));pointer-events:none}.hero:after{content:'❤️‍🔥';font-size:92px;position:absolute;right:-10px;bottom:-24px;opacity:.23}.eyebrow,.hero h1,.motto,.sub,.topnav{position:relative;z-index:1}.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;opacity:.92}.hero h1{font-size:31px;line-height:1.05;margin:8px 0}.motto{font-size:20px;font-weight:900;margin:0;text-shadow:0 2px 8px rgba(0,0,0,.2)}.sub{margin:8px 0 0;opacity:.95}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;margin-top:16px;box-shadow:0 10px 30px rgba(56,92,34,.07)}h2{font-size:19px;margin:0 0 14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.full{grid-column:1/-1}label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}.req:after{content:' *';color:var(--danger)}input,select,textarea{width:100%;border:1px solid #cfdcc8;border-radius:12px;padding:13px 12px;font:inherit;background:#fff;color:var(--ink)}textarea{min-height:90px;resize:vertical}input:focus,select:focus,textarea:focus{outline:3px solid rgba(24,79,45,.18);border-color:#184f2d}.choice{display:flex;gap:14px;flex-wrap:wrap}.choice label{font-weight:600;display:flex;align-items:center;gap:7px;margin:0}.choice input{width:auto}.btn{display:block;width:100%;border:0;border-radius:14px;padding:14px 16px;font-weight:900;font-size:16px;cursor:pointer}.primary{background:linear-gradient(135deg,var(--accent),var(--accent3) 44%,var(--accent2) 100%);color:white;box-shadow:0 8px 20px rgba(24,79,45,.22)}.secondary{background:rgba(255,255,255,.9);color:#5c250f;border:1px solid rgba(255,255,255,.8)}.danger{background:#fff0f0;color:var(--danger);border:1px solid #f1bcbc}.row{display:flex;gap:10px;flex-wrap:wrap}.row .btn{width:auto;flex:1}.note{font-size:13px;color:var(--muted);line-height:1.45}.success{display:none;background:#ecfdf3;border:1px solid #a7e1b8;color:var(--ok);padding:14px;border-radius:14px;margin-top:14px;font-weight:700}.admin{display:none}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.toolbar button{flex:1;min-width:130px}.count{font-size:36px;font-weight:900}.small{font-size:12px;color:var(--muted)}.entry{border:1px solid var(--line);border-left:5px solid var(--accent2);border-radius:14px;padding:13px;margin-top:10px}.entry strong{font-size:16px}.pill{display:inline-block;background:linear-gradient(90deg,#fff0e6,#efffe2);color:#4b5f1a;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:800;margin-top:6px}.topnav{display:flex;gap:8px;margin-top:14px}.topnav button{flex:1}.switch{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid #edf3e9}.switch:last-child{border-bottom:0}.switch input{width:22px;height:22px;accent-color:var(--accent2)}.hidden{display:none!important}
+    .login-overlay{display:none;position:fixed;inset:0;background:rgba(15,25,10,.62);z-index:9999;align-items:center;justify-content:center;padding:18px}.login-overlay.show{display:flex}.login-box{width:min(420px,100%);background:white;border-radius:22px;padding:22px;box-shadow:0 24px 80px rgba(0,0,0,.3);border:2px solid #2f7d45}.login-box h2{margin-bottom:8px}.login-actions{display:flex;gap:10px;margin-top:14px}.login-actions .btn{flex:1}.login-error{display:none;color:#b91c1c;font-size:13px;font-weight:700;margin-top:8px}
+    @media(max-width:620px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.hero h1{font-size:27px}.wrap{padding:10px 10px 40px}.card{padding:17px}.row{flex-direction:column}.row .btn{width:100%}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Iglesia Torre de Gracia Navarra</div>
+    <h1 id="eventTitle">Inscripción al Campamento</h1>
+    <p class="motto" id="eventMotto">Un corazón en fuego</p>
+    <p class="sub" id="eventMeta">Formulario oficial de inscripción</p>
+    <div class="topnav"><button class="btn secondary" onclick="showForm()">Formulario</button><button class="btn secondary" onclick="openAdmin()">Panel privado</button></div>
+  </section>
+
+  <main id="publicArea">
+    <form id="signupForm" class="card">
+      <h2>Datos del participante</h2>
+      <div class="grid">
+        <div><label class="req">Nombre</label><input name="nombre" required autocomplete="given-name"></div>
+        <div><label class="req">Apellidos</label><input name="apellidos" required autocomplete="family-name"></div>
+        <div data-field="birth"><label class="req">Fecha de nacimiento</label><input type="date" name="nacimiento" required></div>
+        
+        <div data-field="participantPhone"><label>Teléfono del participante</label><input type="tel" name="telefonoParticipante" autocomplete="tel"></div>
+        <div data-field="email"><label>Correo electrónico</label><input type="email" name="email" autocomplete="email"></div>
+      </div>
+    </form>
+
+    <section class="card" id="guardianCard">
+      <h2>Padre, madre o tutor</h2>
+      <div class="grid">
+        <div><label class="req">Nombre y apellidos</label><input form="signupForm" name="tutor" required></div>
+        <div><label class="req">Teléfono principal</label><input form="signupForm" type="tel" name="telefonoTutor" required></div>
+        <div data-field="secondPhone"><label>Segundo teléfono</label><input form="signupForm" type="tel" name="segundoTelefono"></div>
+        <div data-field="relationship"><label>Parentesco</label><input form="signupForm" name="parentesco" placeholder="Padre, madre, tutor…"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Información importante</h2>
+      <div class="grid">
+        <div class="full"><label class="req">¿Tiene alguna alergia?</label><div class="choice"><label><input form="signupForm" type="radio" name="alergia" value="No" required>No</label><label><input form="signupForm" type="radio" name="alergia" value="Sí" required>Sí</label></div></div>
+        <div class="full hidden" id="allergyDetail"><label class="req">Indica a qué es alérgico/a</label><textarea form="signupForm" name="detalleAlergia"></textarea></div>
+        <div class="full" data-field="observations"><label>Observaciones</label><textarea form="signupForm" name="observaciones" placeholder="Información que debamos conocer"></textarea></div>
+      </div>
+    </section>
+
+    <section class="card" id="priceCard" data-field="price">
+      <h2>Precio</h2>
+      <p id="priceText"><strong>Precio del evento:</strong> por determinar.</p>
+    </section>
+
+    <section class="card">
+      <label class="choice"><input form="signupForm" type="checkbox" name="autorizacion" required>Confirmo que los datos son correctos y autorizo la participación.</label>
+      <p class="note">Los datos se utilizarán exclusivamente para gestionar esta actividad de Torre de Gracia Navarra.</p>
+      <button form="signupForm" class="btn primary" type="submit">Enviar inscripción</button>
+      <div id="success" class="success">✅ Inscripción guardada correctamente en este dispositivo.</div>
+    </section>
+  </main>
+
+  <section id="adminArea" class="admin">
+    <div class="card">
+      <h2>Panel privado</h2>
+      <div class="count" id="totalCount">0</div><div class="small">inscripciones guardadas en este dispositivo</div>
+      <div class="toolbar" style="margin-top:14px"><button class="btn secondary" onclick="downloadCSV()">Descargar Excel/CSV</button><button class="btn secondary" onclick="window.print()">Imprimir / PDF</button><button class="btn danger" onclick="clearAll()">Borrar todas</button></div><div style="margin:12px 0"><label for="searchEntries">Buscar inscripción</label><input id="searchEntries" placeholder="Nombre, apellidos o teléfono" oninput="renderEntries()"></div>
+      <div id="entries"></div>
+    </div>
+
+    <div class="card">
+      <h2>Configuración rápida</h2>
+      <div class="grid">
+        <div class="full"><label>Nombre del evento</label><input id="cfgTitle" value="Inscripción al Campamento"></div>
+        <div class="full"><label>Lema</label><input id="cfgMotto" value="Un corazón en fuego"></div>
+        <div><label>Precio</label><input id="cfgPrice" placeholder="Ej.: 25 €"></div>
+        <div><label>Nueva contraseña del panel</label><input id="cfgPassword" type="password" minlength="8" autocomplete="new-password" placeholder="Déjalo vacío para conservarla"></div><div class="full"><label class="choice"><input type="checkbox" id="showCfgPassword" onchange="cfgPassword.type=this.checked?'text':'password'">Mostrar contraseña mientras la cambio</label><p class="note">Debe tener al menos 8 caracteres. Solo se guarda una huella criptográfica, nunca la contraseña legible.</p></div><div><label>Color principal</label><input id="cfgAccent" type="color" value="#7c2d12"></div><div><label>Color secundario</label><input id="cfgAccent2" type="color" value="#184f2d"></div><div><label>Color de transición</label><input id="cfgAccent3" type="color" value="#2f7d45"></div>
+      </div>
+      <div style="margin-top:12px">
+        <div class="switch"><span>Mostrar precio</span><input type="checkbox" data-toggle="price" checked></div>
+        <div class="switch"><span>Mostrar fecha de nacimiento</span><input type="checkbox" data-toggle="birth" checked></div>
+        <div class="switch"><span>Mostrar teléfono del participante</span><input type="checkbox" data-toggle="participantPhone" checked></div>
+        <div class="switch"><span>Mostrar correo electrónico</span><input type="checkbox" data-toggle="email"></div>
+        <div class="switch"><span>Mostrar segundo teléfono</span><input type="checkbox" data-toggle="secondPhone" checked></div>
+        <div class="switch"><span>Mostrar parentesco</span><input type="checkbox" data-toggle="relationship" checked></div>
+        <div class="switch"><span>Mostrar observaciones</span><input type="checkbox" data-toggle="observations" checked></div>
+      </div>
+      <button class="btn primary" style="margin-top:14px" onclick="saveConfig()">Guardar configuración</button>
+    </div>
+  </section>
+</div>
+<div id="loginOverlay" class="login-overlay" aria-hidden="true">
+  <div class="login-box">
+    <h2>Acceso al panel privado</h2>
+    <p class="note" id="loginHelp">Introduce la contraseña para ver las inscripciones y la configuración.</p>
+    <label for="adminPasswordInput">Contraseña</label>
+    <input id="adminPasswordInput" type="password" autocomplete="current-password" placeholder="Contraseña del panel">
+    <div id="loginError" class="login-error">Contraseña incorrecta.</div>
+    <div class="login-actions">
+      <button class="btn secondary" type="button" onclick="closeLogin()">Cancelar</button>
+      <button class="btn primary" id="loginSubmit" type="button" onclick="submitAdminLogin()">Entrar</button>
+    </div>
+  </div>
+</div>
+<script>
+const STORE='tdg_inscripciones_v1', CFG='tdg_config_v1', LOGIN='tdg_login_guard_v1', SESSION='tdg_admin_until';
+const form=document.getElementById('signupForm');
+const DEFAULTS={title:'Inscripción al Campamento',motto:'Un corazón en fuego',price:'',passwordHash:'',colors:{accent:'#7c2d12',accent2:'#184f2d',accent3:'#2f7d45'},toggles:{price:true,birth:true,participantPhone:true,email:false,secondPhone:true,relationship:true,observations:true}};
+document.querySelectorAll('input[name="alergia"]').forEach(r=>r.addEventListener('change',()=>{const yes=document.querySelector('input[name="alergia"]:checked')?.value==='Sí';document.getElementById('allergyDetail').classList.toggle('hidden',!yes);document.querySelector('[name="detalleAlergia"]').required=yes;}));
+form.addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(form);const data=Object.fromEntries(fd.entries());data.fechaHora=new Date().toLocaleString('es-ES');data.id=Date.now();const rows=JSON.parse(localStorage.getItem(STORE)||'[]');rows.unshift(data);localStorage.setItem(STORE,JSON.stringify(rows));form.reset();document.getElementById('allergyDetail').classList.add('hidden');document.getElementById('success').style.display='block';setTimeout(()=>document.getElementById('success').style.display='none',4000);renderEntries();});
+function showForm(){document.getElementById('publicArea').style.display='block';document.getElementById('adminArea').style.display='none';sessionStorage.removeItem(SESSION);}
+function getConfig(){try{const saved=JSON.parse(localStorage.getItem(CFG)||'null');return saved?{...DEFAULTS,...saved,colors:{...DEFAULTS.colors,...(saved.colors||{})},toggles:{...DEFAULTS.toggles,...(saved.toggles||{})}}:structuredClone(DEFAULTS);}catch{return structuredClone(DEFAULTS);}}
+function setConfig(c){localStorage.setItem(CFG,JSON.stringify(c));}
+async function hashPassword(value){const bytes=new TextEncoder().encode(value);const digest=await crypto.subtle.digest('SHA-256',bytes);return [...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');}
+function guard(){try{return JSON.parse(localStorage.getItem(LOGIN)||'{"attempts":0,"lockedUntil":0}');}catch{return {attempts:0,lockedUntil:0};}}
+function openAdmin(){if(Number(sessionStorage.getItem(SESSION)||0)>Date.now()){showAdmin();return;}const cfg=getConfig(),g=guard(),o=document.getElementById('loginOverlay'),i=document.getElementById('adminPasswordInput');document.getElementById('loginError').style.display='none';i.value='';const first=!cfg.passwordHash;loginHelp.textContent=first?'Crea ahora una contraseña segura de al menos 8 caracteres para proteger el panel en este dispositivo.':'Introduce la contraseña para ver las inscripciones y la configuración.';loginSubmit.textContent=first?'Crear contraseña':'Entrar';if(g.lockedUntil>Date.now()){loginError.textContent='Demasiados intentos. Espera '+Math.ceil((g.lockedUntil-Date.now())/60000)+' minuto(s).';loginError.style.display='block';}o.classList.add('show');o.setAttribute('aria-hidden','false');setTimeout(()=>i.focus(),80);}
+function closeLogin(){const o=document.getElementById('loginOverlay');o.classList.remove('show');o.setAttribute('aria-hidden','true');}
+function showAdmin(){closeLogin();sessionStorage.setItem(SESSION,String(Date.now()+30*60*1000));document.getElementById('publicArea').style.display='none';document.getElementById('adminArea').style.display='block';renderEntries();}
+async function submitAdminLogin(){const cfg=getConfig(),i=document.getElementById('adminPasswordInput'),g=guard();if(g.lockedUntil>Date.now()){openAdmin();return;}if(i.value.length<8){loginError.textContent='La contraseña debe tener al menos 8 caracteres.';loginError.style.display='block';return;}const candidate=await hashPassword(i.value);if(!cfg.passwordHash){cfg.passwordHash=candidate;delete cfg.password;setConfig(cfg);localStorage.removeItem(LOGIN);showAdmin();return;}if(candidate!==cfg.passwordHash){g.attempts=(g.attempts||0)+1;if(g.attempts>=5){g.attempts=0;g.lockedUntil=Date.now()+5*60*1000;}localStorage.setItem(LOGIN,JSON.stringify(g));loginError.textContent=g.lockedUntil>Date.now()?'Panel bloqueado durante 5 minutos.':'Contraseña incorrecta. Intento '+g.attempts+' de 5.';loginError.style.display='block';i.select();return;}localStorage.removeItem(LOGIN);showAdmin();}
+document.getElementById('adminPasswordInput').addEventListener('keydown',e=>{if(e.key==='Enter')submitAdminLogin();});
+function applyColors(colors){for(const [key,value] of Object.entries(colors))document.documentElement.style.setProperty('--'+key,value);}
+function applyConfig(){const c=getConfig();eventTitle.textContent=c.title;eventMotto.textContent=c.motto;cfgTitle.value=c.title;cfgMotto.value=c.motto;cfgPrice.value=c.price||'';cfgPassword.value='';cfgAccent.value=c.colors.accent;cfgAccent2.value=c.colors.accent2;cfgAccent3.value=c.colors.accent3;applyColors(c.colors);priceText.innerHTML='<strong>Precio del evento:</strong> '+(c.price||'por determinar.');document.querySelectorAll('[data-toggle]').forEach(x=>x.checked=!!c.toggles[x.dataset.toggle]);Object.entries(c.toggles).forEach(([k,v])=>document.querySelectorAll('[data-field="'+k+'"]').forEach(el=>el.classList.toggle('hidden',!v)));}
+async function saveConfig(){const current=getConfig(),password=cfgPassword.value.trim();if(password&&password.length<8){alert('La nueva contraseña debe tener al menos 8 caracteres.');return;}const toggles={};document.querySelectorAll('[data-toggle]').forEach(x=>toggles[x.dataset.toggle]=x.checked);const c={...current,title:cfgTitle.value.trim()||DEFAULTS.title,motto:cfgMotto.value.trim()||DEFAULTS.motto,price:cfgPrice.value.trim(),colors:{accent:cfgAccent.value,accent2:cfgAccent2.value,accent3:cfgAccent3.value},toggles};if(password)c.passwordHash=await hashPassword(password);delete c.password;setConfig(c);applyConfig();alert('Configuración guardada de forma segura');}
+[cfgAccent,cfgAccent2,cfgAccent3].forEach(el=>el.addEventListener('input',()=>applyColors({accent:cfgAccent.value,accent2:cfgAccent2.value,accent3:cfgAccent3.value})));function renderEntries(){const rows=JSON.parse(localStorage.getItem(STORE)||'[]');totalCount.textContent=rows.length;const q=(document.getElementById('searchEntries')?.value||'').trim().toLowerCase();const filtered=rows.filter(r=>[r.nombre,r.apellidos,r.telefonoTutor,r.telefonoParticipante,r.tutor].some(v=>String(v||'').toLowerCase().includes(q)));entries.innerHTML=filtered.length?'':'<p class="note">'+(rows.length?'No hay resultados para esa búsqueda.':'Todavía no hay inscripciones.')+'</p>';filtered.forEach(r=>{const d=document.createElement('div');d.className='entry';d.innerHTML='<strong>'+esc(r.nombre||'')+' '+esc(r.apellidos||'')+'</strong><br><span class="pill">'+esc(r.fechaHora||'')+'</span><p class="note">Tutor: '+esc(r.tutor||'')+' · '+esc(r.telefonoTutor||'')+'<br>Alergia: '+esc(r.alergia||'')+(r.detalleAlergia?' — '+esc(r.detalleAlergia):'')+(r.observaciones?'<br>Observaciones: '+esc(r.observaciones):'')+'</p><button class="btn danger" type="button" onclick="deleteEntry('+Number(r.id)+')">Eliminar esta inscripción</button>';entries.appendChild(d);});}
+function downloadCSV(){const rows=JSON.parse(localStorage.getItem(STORE)||'[]');if(!rows.length){alert('No hay inscripciones');return;}const keys=[...new Set(rows.flatMap(Object.keys))].filter(k=>k!=='id');const csv='\ufeff'+[keys.join(';'),...rows.map(r=>keys.map(k=>'"'+String(r[k]??'').replaceAll('"','""')+'"').join(';'))].join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='inscripciones-campamento.csv';a.click();URL.revokeObjectURL(a.href);}
+function deleteEntry(id){const rows=JSON.parse(localStorage.getItem(STORE)||'[]');const person=rows.find(r=>Number(r.id)===Number(id));if(!person)return;if(confirm('¿Eliminar la inscripción de '+(person.nombre||'')+' '+(person.apellidos||'')+'?')){localStorage.setItem(STORE,JSON.stringify(rows.filter(r=>Number(r.id)!==Number(id))));renderEntries();}}
+function clearAll(){if(confirm('¿Seguro que quieres borrar todas las inscripciones guardadas en este dispositivo? Esta acción no se puede deshacer.')){localStorage.removeItem(STORE);renderEntries();}}
+function esc(s){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+applyConfig();renderEntries();
+</script>
+</body>
+</html>
